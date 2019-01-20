@@ -112,7 +112,8 @@ export default class App extends Component {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          height: "100%"
+          height: "100%",
+          alignSelf: "baseline"
         }}
       >
         <LinearGradient
@@ -125,68 +126,70 @@ export default class App extends Component {
           end={{ x: 0, y: 1 }}
           locations={[0, 0.75]}
         >
-          <View
-            style={{
-              flex: 1,
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          >
-            <View>
-              <Text style={[styles.colorWhite, { textAlign: "center" }]}>
-                <CustomText
-                  text="High"
-                  color="white"
-                  style={{ fontSize: 70, fontWeight: "bold" }}
-                />
-              </Text>
-              <Text style={[styles.colorWhite, { textAlign: "center" }]}>
-                <CustomText
-                  text="Klassified"
-                  color="white"
-                  style={{ fontSize: 70, fontWeight: "bold" }}
-                />
-              </Text>
-            </View>
-            <View>
-              <Text style={[styles.colorWhite, { padding: 10 }]}>
-                <CustomText
-                  text={this.state.listerners + " MONTHLY LISTENERS"}
-                  color="white"
-                  style={{ fontSize: 10 }}
-                />
-              </Text>
-            </View>
+          <View>
             <View
               style={{
-                width: "70%",
-                backgroundColor: "#00cc66",
+                flex: 1,
                 justifyContent: "center",
-                borderRadius: 30,
-                alignItems: "center",
-                margin: 4,
-                padding: 10,
-                marginBottom: 15
+                alignItems: "center"
               }}
             >
-              <CustomButton
-                onPress={this.props.onPress}
-                title={this.props.title}
-              />
-            </View>
-            <View>
-              <Text style={[styles.colorWhite, { textAlign: "center" }]}>
-                <CustomText
-                  text={this.state.popularity}
-                  color="white"
-                  style={{ fontSize: 25, fontWeight: "bold" }}
+              <View>
+                <Text style={[styles.colorWhite, { textAlign: "center" }]}>
+                  <CustomText
+                    text="High"
+                    color="white"
+                    style={{ fontSize: 70, fontWeight: "bold" }}
+                  />
+                </Text>
+                <Text style={[styles.colorWhite, { textAlign: "center" }]}>
+                  <CustomText
+                    text="Klassified"
+                    color="white"
+                    style={{ fontSize: 70, fontWeight: "bold" }}
+                  />
+                </Text>
+              </View>
+              <View>
+                <Text style={[styles.colorWhite, { padding: 10 }]}>
+                  <CustomText
+                    text={this.state.listerners + " MONTHLY LISTENERS"}
+                    color="white"
+                    style={{ fontSize: 10 }}
+                  />
+                </Text>
+              </View>
+              <View
+                style={{
+                  width: "70%",
+                  backgroundColor: "#00cc66",
+                  justifyContent: "center",
+                  borderRadius: 30,
+                  alignItems: "center",
+                  margin: 4,
+                  padding: 10,
+                  marginBottom: 15
+                }}
+              >
+                <CustomButton
+                  onPress={this.props.onPress}
+                  title={this.props.title}
                 />
-              </Text>
+              </View>
+              <View>
+                <Text style={[styles.colorWhite, { textAlign: "center" }]}>
+                  <CustomText
+                    text={this.state.popularity}
+                    color="white"
+                    style={{ fontSize: 25, fontWeight: "bold" }}
+                  />
+                </Text>
+              </View>
+              <View />
             </View>
-            <View />
-          </View>
 
-          <Playlist />
+            <Playlist />
+          </View>
         </LinearGradient>
       </ImageBackground>
     );
