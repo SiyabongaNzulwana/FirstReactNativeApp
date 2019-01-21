@@ -51,11 +51,11 @@ export default createAppContainer(
         tabBarIcon: <Icon name="home" type="entypo" size={24} />,
         backgroundColor: "red",
         tabBarOptions: {
-          activeTintColor: "green",
-          inactiveTintColor: "gray"
-        },
-        style: {
-          backgroundColor: "red"
+          activeTintColor: "white",
+          inactiveTintColor: "black",
+          style: {
+            backgroundColor: "grey"
+          }
         }
       })
     },
@@ -65,11 +65,11 @@ export default createAppContainer(
         title: "Search",
         tabBarIcon: <Icon name="magnifying-glass" type="entypo" size={24} />,
         tabBarOptions: {
-          activeTintColor: "green",
-          inactiveTintColor: "gray"
-        },
-        style: {
-          backgroundColor: "grey"
+          activeTintColor: "white",
+          inactiveTintColor: "black",
+          style: {
+            backgroundColor: "grey"
+          }
         }
       })
     },
@@ -79,11 +79,11 @@ export default createAppContainer(
         title: "Library",
         tabBarIcon: <Icon2 name="ios-albums" type="entypo" size={24} />,
         tabBarOptions: {
-          activeTintColor: "green",
-          inactiveTintColor: "gray"
-        },
-        style: {
-          backgroundColor: "grey"
+          activeTintColor: "white",
+          inactiveTintColor: "black",
+          style: {
+            backgroundColor: "grey"
+          }
         }
       })
     }
