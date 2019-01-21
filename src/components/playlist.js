@@ -77,7 +77,6 @@ class Playlist extends Component {
           style={{
             padding: 20,
             alignItems: "baseline",
-            overflow: "scroll",
             height: 110
           }}
         >
@@ -123,13 +122,12 @@ class Playlist extends Component {
                         flexDirection: "row",
                         justifyContent: "flex-end",
                         alignItems: "flex-end",
-                        marginHorizontal: 190
+                        marginHorizontal: 180
                       }}
                     >
                       <CustomIcon
-                        style={{ width: 50 }}
-                        name="dots-three-horizontal"
-                        type="entypo"
+                        style={{ width: 50, paddingRight: 10 }}
+                        name="ios-more"
                         size={24}
                         color="white"
                       />

@@ -11,6 +11,7 @@ import LinearGradient from "react-native-linear-gradient";
 import Playlist from "../playlist";
 import CustomIcon from "../custom-icon";
 import CustomText from "../custom-text";
+import Playing from "../playing";
 
 const styles = StyleSheet.create({
   container: {
@@ -59,8 +60,7 @@ export default class App extends Component {
     headerLeft: (
       <CustomIcon
         style={{ paddingLeft: 10 }}
-        name="chevron-thin-left"
-        type="entypo"
+        name="ios-arrow-back"
         size={24}
         color="white"
       />
@@ -76,11 +76,10 @@ export default class App extends Component {
           </View>
         </TouchableOpacity>
         <CustomIcon
-          name="dots-three-horizontal"
-          type="entypo"
+          name="ios-more"
           size={24}
           color="white"
-          style={{ fontWeight: "bold" }}
+          style={{ fontWeight: "bold", paddingRight: 10 }}
         />
       </View>
     ),
@@ -98,7 +97,8 @@ export default class App extends Component {
       name: "High",
       surname: "Klassified",
       listerners: "46, 856",
-      popularity: "Popular"
+      popularity: "Popular",
+      playing: "Scopola."
     };
   }
   handlePress = () => {
@@ -193,6 +193,55 @@ export default class App extends Component {
             <Playlist />
           </View>
         </LinearGradient>
+        <View
+          style={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexDirection: "row",
+            width: "100%",
+            height: 55,
+            backgroundColor: "#404040",
+            height: 60
+          }}
+        >
+          <Playing style={{ backgroundColor: "grey", height: 60 }} />
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: 10
+            }}
+          >
+            <CustomIcon name="ios-heart" size={24} color="white" />
+            <View
+              style={{
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "flex-end"
+              }}
+            >
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  alignContent: "center"
+                }}
+              >
+                {this.state.playing + " High Klassified"}
+              </Text>
+            </View>
+            <View
+              style={{
+                flex: 1,
+                justifyContent: "center",
+                alignItems: "flex-end"
+              }}
+            >
+              <CustomIcon name="ios-pause" size={24} color="white" />
+            </View>
+          </View>
+        </View>
       </ImageBackground>
     );
   }
