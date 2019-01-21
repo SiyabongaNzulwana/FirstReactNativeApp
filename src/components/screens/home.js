@@ -59,7 +59,8 @@ export default class App extends Component {
     headerLeft: (
       <CustomIcon
         style={{ paddingLeft: 10 }}
-        name="ios-arrow-back"
+        name="chevron-thin-left"
+        type="entypo"
         size={24}
         color="white"
       />
@@ -75,7 +76,8 @@ export default class App extends Component {
           </View>
         </TouchableOpacity>
         <CustomIcon
-          name="ios-more"
+          name="dots-three-horizontal"
+          type="entypo"
           size={24}
           color="white"
           style={{ fontWeight: "bold" }}
@@ -124,7 +126,7 @@ export default class App extends Component {
           ]}
           start={{ x: 0, y: 0 }}
           end={{ x: 0, y: 1 }}
-          locations={[0, 0.75]}
+          locations={[0, 0.75, 0.75]}
         >
           <View>
             <View

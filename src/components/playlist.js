@@ -123,12 +123,13 @@ class Playlist extends Component {
                         flexDirection: "row",
                         justifyContent: "flex-end",
                         alignItems: "flex-end",
-                        marginHorizontal: 196
+                        marginHorizontal: 190
                       }}
                     >
                       <CustomIcon
                         style={{ width: 50, height: 50 }}
-                        name="ios-more"
+                        name="dots-three-horizontal"
+                        type="entypo"
                         size={24}
                         color="white"
                       />

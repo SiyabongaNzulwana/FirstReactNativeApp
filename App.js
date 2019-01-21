@@ -11,7 +11,8 @@ import { View } from "react-native";
 import Home from "./src/components/screens/home";
 import Search from "./src/components/screens/search";
 import Library from "./src/components/screens/library";
-import Icon from "react-native-vector-icons/Ionicons";
+import Icon from "react-native-vector-icons/Entypo";
+import Icon2 from "react-native-vector-icons/Ionicons";
 
 import {
   createBottomTabNavigator,
@@ -47,10 +48,14 @@ export default createAppContainer(
       screen: HomeStack,
       navigationOptions: ({ navigation }) => ({
         title: "Home",
-        tabBarIcon: <Icon name="ios-home" size={24} />,
+        tabBarIcon: <Icon name="home" type="entypo" size={24} />,
+        backgroundColor: "red",
         tabBarOptions: {
           activeTintColor: "green",
           inactiveTintColor: "gray"
+        },
+        style: {
+          backgroundColor: "red"
         }
       })
     },
@@ -58,10 +63,13 @@ export default createAppContainer(
       screen: Search,
       navigationOptions: ({ navigation }) => ({
         title: "Search",
-        tabBarIcon: <Icon name="ios-search" size={24} />,
+        tabBarIcon: <Icon name="magnifying-glass" type="entypo" size={24} />,
         tabBarOptions: {
           activeTintColor: "green",
           inactiveTintColor: "gray"
+        },
+        style: {
+          backgroundColor: "grey"
         }
       })
     },
@@ -69,10 +77,13 @@ export default createAppContainer(
       screen: Library,
       navigationOptions: ({ navigation }) => ({
         title: "Library",
-        tabBarIcon: <Icon name="ios-albums" size={24} />,
+        tabBarIcon: <Icon2 name="ios-albums" type="entypo" size={24} />,
         tabBarOptions: {
           activeTintColor: "green",
           inactiveTintColor: "gray"
+        },
+        style: {
+          backgroundColor: "grey"
         }
       })
     }
