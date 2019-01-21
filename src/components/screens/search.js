@@ -10,6 +10,10 @@ export default class Search extends Component {
           title="Go to Library"
           onPress={() => this.props.navigation.navigate("Library")}
         />
+        <Button
+          title="Home"
+          onPress={() => this.props.navigation.navigate("Home")}
+        />
       </View>
     );
   }

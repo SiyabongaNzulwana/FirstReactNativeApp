@@ -136,7 +136,7 @@ export default class App extends Component {
                 alignItems: "center"
               }}
             >
-              <View>
+              <View style={{ paddingTop: 100 }}>
                 <Text style={[styles.colorWhite, { textAlign: "center" }]}>
                   <CustomText
                     text="High"
@@ -200,7 +200,7 @@ export default class App extends Component {
             flexDirection: "row",
             width: "100%",
             height: 55,
-            backgroundColor: "#404040",
+            backgroundColor: "#262626",
             height: 60
           }}
         >

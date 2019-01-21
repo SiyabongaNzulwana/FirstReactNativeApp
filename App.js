@@ -54,7 +54,7 @@ export default createAppContainer(
           activeTintColor: "white",
           inactiveTintColor: "black",
           style: {
-            backgroundColor: "#404040"
+            backgroundColor: "#262626"
           }
         }
       })
@@ -68,7 +68,7 @@ export default createAppContainer(
           activeTintColor: "white",
           inactiveTintColor: "black",
           style: {
-            backgroundColor: "#404040"
+            backgroundColor: "#262626"
           }
         }
       })
@@ -82,7 +82,7 @@ export default createAppContainer(
           activeTintColor: "white",
           inactiveTintColor: "black",
           style: {
-            backgroundColor: "#404040"
+            backgroundColor: "#262626"
           }
         }
       })
